@@ -20,6 +20,7 @@
 		4FA7C2A92406ECB9009E1B34 /* WeatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA7C2A82406ECB9009E1B34 /* WeatherViewModel.swift */; };
 		4FA7C2AC2406EFF2009E1B34 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA7C2AB2406EFF2009E1B34 /* WeatherView.swift */; };
 		4FA7C2B4240714D6009E1B34 /* SearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA7C2B3240714D6009E1B34 /* SearchView.swift */; };
+		4FA7C2BA240C7A9E009E1B34 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FA7C2B9240C7A9E009E1B34 /* SearchBar.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		4FA7C2A82406ECB9009E1B34 /* WeatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewModel.swift; sourceTree = "<group>"; };
 		4FA7C2AB2406EFF2009E1B34 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
 		4FA7C2B3240714D6009E1B34 /* SearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchView.swift; sourceTree = "<group>"; };
+		4FA7C2B9240C7A9E009E1B34 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,7 +113,6 @@
 			children = (
 				4FA7C2762406E02F009E1B34 /* SceneDelegate.swift */,
 				4FA7C2782406E02F009E1B34 /* ContentView.swift */,
-				4FA7C2B3240714D6009E1B34 /* SearchView.swift */,
 				4FA7C27A2406E034009E1B34 /* Assets.xcassets */,
 				4FA7C2742406E02F009E1B34 /* AppDelegate.swift */,
 				4FA7C27F2406E034009E1B34 /* LaunchScreen.storyboard */,
@@ -163,6 +164,8 @@
 		4FA7C2B2240714B0009E1B34 /* SearchGroup */ = {
 			isa = PBXGroup;
 			children = (
+				4FA7C2B3240714D6009E1B34 /* SearchView.swift */,
+				4FA7C2B9240C7A9E009E1B34 /* SearchBar.swift */,
 			);
 			path = SearchGroup;
 			sourceTree = "<group>";
@@ -303,6 +306,7 @@
 				4FA7C2752406E02F009E1B34 /* AppDelegate.swift in Sources */,
 				4FA7C2772406E02F009E1B34 /* SceneDelegate.swift in Sources */,
 				4FA7C2B4240714D6009E1B34 /* SearchView.swift in Sources */,
+				4FA7C2BA240C7A9E009E1B34 /* SearchBar.swift in Sources */,
 				4FA7C2792406E02F009E1B34 /* ContentView.swift in Sources */,
 				4FA7C2AC2406EFF2009E1B34 /* WeatherView.swift in Sources */,
 				4FA7C2A72406E91F009E1B34 /* API.swift in Sources */,

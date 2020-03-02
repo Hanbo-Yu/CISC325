@@ -12,25 +12,34 @@ struct WeatherView: View {
     var weather: Weather?
     var height: CGFloat = 0
     var body: some View {
-        VStack(alignment: .center, spacing: 20){
-            Text("\(weather?.name ?? "Unknown")")
-                .font(.title)
-                .foregroundColor(.white)
-                .bold()
+        VStack(alignment: .leading, spacing: 5.0){
+            Text("\(weather?.main.temp.round ?? 0)°F")
+            .foregroundColor(.white)
+            .fontWeight(Font.Weight.heavy)
+            .font(.system(size:40))
             HStack{
-                Text("\(weather?.main.temp.round ?? 0)")
+                Text("\(weather?.name ?? "Unknown")")
+                    .font(.title)
                     .foregroundColor(.white)
-                    .fontWeight(Font.Weight.heavy)
-                    .font(.system(size:65))
+                    .bold()
+
         }
     Text("\(weather?.weather.last?.description ?? "Unknown")")
                 .foregroundColor(.white)
                 .font(.body)
-        }.frame(width:height,height:height)
-
-
+        }
+        .position(x:100, y:120)
     }
 }
-func convertToCelsius(fahrenheit: Int) -> Int {
-    return Int(5.0 / 9.0 * (Double(fahrenheit) - 32.0))
+struct WeatherView_Previews: PreviewProvider {
+    static var previews: some View {
+        WeatherView()
+    }
+
+}
+
+extension Double{
+    var round: Int{
+        return Int(self)
+    }
 }
